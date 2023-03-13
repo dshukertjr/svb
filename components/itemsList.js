@@ -205,9 +205,7 @@ export default function ItemsList({
                                                   </Link>
                                               </span>
                                               {item.url ? (
-                                                  <span className="listed-item-domain">
-                                                      (<Link href={`/from?site=${item.domain}`}>{item.domain}</Link>)
-                                                  </span>
+                                                  <span className="listed-item-domain">({item.domain})</span>
                                               ) : null}
                                           </td>
                                       </tr>
@@ -218,9 +216,7 @@ export default function ItemsList({
                                           <td>
                                               {/* CREATED TIME */}
                                               <span className="listed-item-time">
-                                                  <Link href={`/item?id=${item.id}`}>
-                                                      <a>{renderCreatedTime(item.created)}</a>
-                                                  </Link>
+                                                  {renderCreatedTime(item.created)}
                                               </span>
                                           </td>
                                       </tr>
