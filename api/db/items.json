@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "by": "CNN Business",
+        "title": "Silicon Valley Bank scrambles to reassure clients after 60% stock wipe-out",
+        "type": "",
+        "url": "https://edition.cnn.com/2023/03/09/investing/silicon-valley-bank/index.html",
+        "domain": "edition.cnn.com",
+        "text": "",
+        "points": 1,
+        "score": 1,
+        "commentCount": 1,
+        "created": 1,
+        "dead": false
+    },
+    {
+        "id": 2,
+        "by": "WSJ",
+        "title": "Banks Lose Billions in Value After Tech Lender SVB Stumbles",
+        "type": "",
+        "url": "https://www.wsj.com/articles/bond-losses-push-silicon-valley-bank-parent-to-raise-capital-125e89d4",
+        "domain": "wsj.com",
+        "text": "",
+        "points": 1,
+        "score": 1,
+        "commentCount": 1,
+        "created": 1,
+        "dead": false
+    }
+]
