@@ -8,10 +8,10 @@ import getRankedItemsByPage from "../api/items/getRankedItemsByPage.js";
 import itemsJson from "../api/db/items.json";
 
 export default function Index({ items, authUserData, page, isMore, getDataError, goToString }) {
-    console.log("items: ", itemsJson);
+    // console.log("items: ", itemsJson);
     return (
         <div className="layout-wrapper">
-            <HeadMetadata title="HeckarNews" description="News and Bullshit people having." />
+            <HeadMetadata title="SVB News Hub" description="News and Bullshit people having." />
             <Header
                 userSignedIn={authUserData.userSignedIn}
                 username={authUserData.username}
@@ -45,7 +45,6 @@ export async function getServerSideProps({ req, query }) {
     const page = 1;
 
     const apiResult = await getRankedItemsByPage(page, req);
-    console.log("apiResult: ", apiResult);
     return {
         props: {
             items: (apiResult && apiResult.items) || [],

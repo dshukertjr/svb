@@ -17,14 +17,14 @@ export default function Header({ userSignedIn, username, karma, goto, pageName, 
                     <td className="header-logo">
                         <Link href="/">
                             <a>
-                                <img src="/android-chrome-512x512.png" />
+                                <img src="/svbnews.png" />
                             </a>
                         </Link>
                     </td>
                     <td className="header-links">
                         <span className="header-links-items">
                             <b className="header-links-name">
-                                <Link href="/">Svb News</Link>
+                                <Link href="/">SVB News Hub</Link>
                             </b>
                         </span>
                     </td>
