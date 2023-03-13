@@ -1,5 +1,5 @@
 .header-wrapper {
-    background-color: #ff6600;
+    background-color: #20324a;
     width: 100%;
     font-size: 13px;
     padding: 5px 7.5px 5px 3px;
@@ -29,7 +29,7 @@
 
 .header-links a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 .header-links a.white-text,
