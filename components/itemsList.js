@@ -191,22 +191,7 @@ export default function ItemsList({
 
                                           {/* VOTE BTN */}
                                           <td valign="top">
-                                              {currUsername === item.by ? (
-                                                  <div className="listed-item-star">
-                                                      <span>*</span>
-                                                  </div>
-                                              ) : null}
-                                              {currUsername !== item.by ? (
-                                                  <>
-                                                      {item.votedOnByUser || item.dead ? (
-                                                          <span className="listed-item-upvote hide"></span>
-                                                      ) : (
-                                                          <span
-                                                              className="listed-item-upvote"
-                                                              onClick={() => requestUpvoteItem(item.id, index)}></span>
-                                                      )}
-                                                  </>
-                                              ) : null}
+                                              <span className="listed-item-upvote"></span>
                                           </td>
 
                                           {/* ITEM TITLE, URL | CONTENT */}
@@ -231,17 +216,6 @@ export default function ItemsList({
                                       <tr className="listed-item-bottom-section">
                                           <td colSpan="2"></td>
                                           <td>
-                                              {/* POINST | NUM OF VOTE */}
-                                              <span>
-                                                  {item.points.toLocaleString()}&nbsp;
-                                                  {item.points === 1 ? "point" : "points"}
-                                              </span>
-
-                                              {/* AUTHOR | BY */}
-                                              <span>
-                                                  &nbsp;by <Link href={`/user?id=${item.by}`}>{item.by}</Link>&nbsp;
-                                              </span>
-
                                               {/* CREATED TIME */}
                                               <span className="listed-item-time">
                                                   <Link href={`/item?id=${item.id}`}>
