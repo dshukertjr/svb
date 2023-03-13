@@ -3,9 +3,7 @@ import Header from "../components/header.js";
 import Footer from "../components/footer.js";
 import ItemsList from "../components/itemsList.js";
 
-import getRankedItemsByPage from "../api/items/getRankedItemsByPage.js";
-
-import itemsJson from "../api/db/items.json";
+import itemsJson from "../db/items.json";
 
 export default function Index({ items, authUserData, page, isMore, getDataError, goToString }) {
     // console.log("items: ", itemsJson);
@@ -44,7 +42,7 @@ export default function Index({ items, authUserData, page, isMore, getDataError,
 export async function getServerSideProps({ req, query }) {
     const page = 1;
 
-    const apiResult = await getRankedItemsByPage(page, req);
+    const apiResult = {};
     return {
         props: {
             items: (apiResult && apiResult.items) || [],

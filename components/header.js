@@ -1,15 +1,7 @@
 import Link from "next/link";
 import Router from "next/router";
 
-import logoutUser from "../api/users/logoutUser";
-
 export default function Header({ userSignedIn, username, karma, goto, pageName, label }) {
-    const requestLogout = () => {
-        logoutUser(() => {
-            Router.push(Router.asPath);
-        });
-    };
-
     return (
         <table className="header-wrapper">
             <tbody>
